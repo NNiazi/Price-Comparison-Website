@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+  <class name="WatchShopXML" table="car">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="increment"/>
+    </id>
+    <property name="image_url" type="varchar">
+      <column name="image_url"/>
+    </property>
+    <property name="description" type="varchar">
+      <column name="description"/>
+    </property>
+    <property name="features" type="varchar">
+      <column name="features"/>
+    </property>
+    <property name="urlId" type="int">
+      <column name="url_id"/>
+    </property>
+    <property name="price" type="int">
+      <column name="price"/>
+    </property>
+  </class>
+</hibernate-mapping>

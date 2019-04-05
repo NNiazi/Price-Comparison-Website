@@ -1,0 +1,170 @@
+/* Style for dropdown button */
+.dropbtn {
+	background-color: black;
+	position: right;
+	color: white;
+	padding: 13px;
+	font-size: 13px;
+	border: none;
+	cursor: pointer;
+}
+/* Style for dropdown */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+/* Style for dropdown content */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+/* Style for dropdown content inner */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+/* Style for dropdown content when hover */
+.dropdown-content a:hover {
+	background-color: #D3D3D3;
+}
+/* Style for dropdown hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Style for dropdown hover button */
+.dropdown:hover .dropbtn {
+	background-color: #D3D3D3;
+}
+/* Style for product section */
+#productSec {
+	margin-top: 100px;
+}
+/* Style for filter */
+#filter {
+	margin-top: -300px;
+	position: fixed;
+}
+/* Style for wrap */
+#wrap{
+	width: 90%;
+	max-width: 1500px;
+	margin: 50px auto;
+}
+/* Style for product display column_2 section */
+.columns_2 figure{
+	width:49%;
+	margin-right:1%;
+}
+.columns_2 figure:nth-child(2){
+	margin-right: 0;
+}
+.columns_3 figure{
+	width:32%;
+	margin-right:1%;
+}
+.columns_3 figure:nth-child(3){
+	margin-right: 0;
+}
+.columns_4 figure{
+	width:24%;
+	margin-right:1%;
+}
+.columns_4 figure:nth-child(4){
+	margin-right: 0;
+}
+.columns_5 figure{
+	width:19%;
+	margin-right:1%;
+}
+.columns_5 figure:nth-child(5){
+	margin-right: 0;
+}
+/* Style for product display columns section hover */
+#columns figure:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform:scale(1.1);
+	transform: scale(1.1);
+
+}
+#columns:hover figure:not(:hover) {
+	opacity: 0.2;
+}
+div#columns figure {
+	display: inline-block;
+	background: #FEFEFE;
+	border: 2px solid #fff;
+	box-shadow: 0 1px 2px rgba(255, 255, 255, 1);
+	margin: 0 0px 15px;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	padding: 15px;
+	padding-bottom: 5px;
+	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+/* Style for product display columns image */
+div#columns figure img {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+	font-size: .9rem;
+	color: #444;
+	line-height: 1.5;
+	height:60px;
+	font-weight:600;
+	text-overflow:ellipsis;
+}
+/* Style for product button */
+a.button{
+	padding:10px;
+	background: #000000;
+	margin:10px;
+	display:block;
+	text-align:center;
+	color:#fff;
+	transition:all 1s linear;
+	text-decoration:none;
+	text-shadow:1px 1px 3px rgba(0,0,0,0.2);
+	border-radius:3px;
+}
+
+/* Style for product button hover */
+a.button:hover{
+	background: #D3D3D3;
+	color: black;
+}
+@media screen and (max-width: 960px) {
+	#columns figure { width: 24%; }
+}
+@media screen and (max-width: 767px) {
+	#columns figure { width:32%;}
+}
+@media screen and (max-width: 600px) {
+	#columns figure { width: 49%;}
+}
+@media screen and (max-width: 500px) {
+	#columns figure { width: 100%;}
+}
+.round {
+	border-radius: 50%;
+}
+
+
+

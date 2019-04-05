@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id = "scraper1" class = "Scraper1"></bean>
+   <bean id = "scraper2" class = "Scraper2"></bean> 
+   <bean id = "scraper3" class = "Scraper3"></bean> 
+   <bean id = "scraper4" class = "Scraper4"></bean> 
+   <bean id = "scraper5" class = "Scraper5"></bean>
+   <bean id = "scraper6" class = "Scraper6"></bean> 
+   <bean id = "scraper7" class = "Scraper7"></bean>
+
+   <bean id = "scraperManager" class = "ScraperManager">
+      <property name = "scraper1" ref = "scraper1"/>
+      <property name = "scraper2" ref = "scraper2"/>
+      <property name = "scraper3" ref = "scraper3"/>
+      <property name = "scraper4" ref = "scraper4"/>
+      <property name = "scraper5" ref = "scraper5"/>
+      <property name = "scraper6" ref = "scraper6"/>
+      <property name = "scraper7" ref = "scraper7"/>
+   </bean>
+   
+   
+</beans>
+

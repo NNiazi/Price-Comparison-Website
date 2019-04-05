@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+  <class name="WatchShopXML" table="watch">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="increment"/>
+    </id>
+    <property name="brand" type="string">
+        <column name="brand"/>
+    </property>
+    <property name="model" type="string">
+        <column name="model"/>
+    </property>
+    <property name="description" type="string">
+        <column name="description"/>
+    </property>
+    <property name="price" type="string">
+        <column name="price"/>
+    </property>
+    <property name="image" type="string">
+      <column name="image"/>
+    </property>
+    <property name="urlId" type="int">
+        <column name="url_id"/>
+    </property>
+    <property name="watchLink" type="string">
+        <column name="watchLink"/>
+    </property>
+  </class>
+  <!--
+  <class name="WatchShopXML" table="url">
+      <id name="id" type="int">
+          <column name="id"/>
+          <generator class="increment"/>
+      </id>
+      <property name="domain" type="string">
+          <column name="domain"/>
+      </property>
+      <property name="path" type="string">
+          <column name="path"/>
+      </property>
+      <property name="query_string" type="string">
+          <column name="query_string"/>
+      </property>
+  </class>
+  -->
+</hibernate-mapping>
